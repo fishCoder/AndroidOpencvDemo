@@ -1,0 +1,159 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.isy.smartobjectrrecognition.SmartObjectRecognitionActivity" >
+
+    <!-- Function MenuItem  -->
+    <item
+        android:id="@+id/Functions"
+        android:title="Functions">
+        <menu>
+            <group
+                android:id="@+id/groupFunctions"
+                android:checkableBehavior="single"
+                android:menuCategory="container" >
+                <item android:id="@+id/findFeature" android:title="Find Feature" /><item android:id="@+id/javaFindObject" android:title="Java Find Object"/>
+                
+                <item android:id="@+id/nativeFindObject" android:title="Native Find Object"/>
+            </group>
+        </menu>
+    </item>
+    
+    <!-- Detector MenuItem  -->
+    <item
+        android:id="@+id/detector"
+        android:title="Detector">
+        <menu>
+            <group
+                android:id="@+id/group_detector"
+                android:checkableBehavior="single"
+                android:menuCategory="container" >
+                <item
+                    android:id="@+id/ORB"
+                    android:title="ORB"/>
+                <item
+                    android:id="@+id/FAST"
+                    android:title="FAST"/>
+                <item
+                    android:id="@+id/STAR"
+                    android:title="STAR"/>
+                <item
+                    android:id="@+id/MSER"
+                    android:title="MSER"/>
+                <item
+                    android:id="@+id/GFTT"
+                    android:title="GFTT"/>
+                <item
+                    android:id="@+id/Dense"
+                    android:title="Dense"/>
+                <item
+                    android:id="@+id/BRISK"
+                    android:title="BRISK"/>
+                <item
+                    android:id="@+id/HARRIS"
+                    android:title="HARRIS"/>
+                <item
+                    android:id="@+id/SimpleBlob"
+                    android:title="SimpleBlob"/>
+                
+                <item
+                    android:id="@+id/GridORB"
+                    android:title="GridORB"/>
+                <item
+                    android:id="@+id/GridFAST"
+                    android:title="GridFAST"/>
+                <item
+                    android:id="@+id/GridSTAR"
+                    android:title="GridSTAR"/>
+                <item
+                    android:id="@+id/GridMSER"
+                    android:title="GridMSER"/>
+                <item
+                    android:id="@+id/GridGFTT"
+                    android:title="GridGFTT"/>
+                <item
+                    android:id="@+id/GridDense"
+                    android:title="GridDense"/>
+                <item
+                    android:id="@+id/GridBRISK"
+                    android:title="GridBRISK"/>
+                <item
+                    android:id="@+id/GridHARRIS"
+                    android:title="GridHARRIS"/>
+                <item
+                    android:id="@+id/GridSimpleBlob"
+                    android:title="GridSimpleBlob"/>
+                
+                <item
+                    android:id="@+id/PyramidORB"
+                    android:title="PyramidORB"/>
+                <item
+                    android:id="@+id/PyramidFAST"
+                    android:title="PyramidFAST"/>
+                <item
+                    android:id="@+id/PyramidSTAR"
+                    android:title="PyramidSTAR"/>
+                <item
+                    android:id="@+id/PyramidGFTT"
+                    android:title="PyramidGFTT"/>
+                <item
+                    android:id="@+id/PyramidDense"
+                    android:title="PyramidDense"/>
+                <item
+                    android:id="@+id/PyramidBRISK"
+                    android:title="PyramidBRISK"/>
+                <item
+                    android:id="@+id/PyramidHARRIS"
+                    android:title="PyramidHARRIS"/>
+                <item
+                    android:id="@+id/PyramidSimpleBlob"
+                    android:title="PyramidSimpleBlob"/>               
+                
+                <item
+                    android:id="@+id/DynamicFAST"
+                    android:title="DynamicFAST"/>
+                <item
+                    android:id="@+id/DynamicSTAR"
+                    android:title="DynamicSTAR"/>
+             </group>
+        </menu>
+    </item>
+    
+    <!-- DescriptorExtractor MenuItem  -->
+    <item
+        android:id="@+id/descriptorExtractor"
+        android:title="DescriptorExtractor">
+        <menu>
+            <group
+                android:id="@+id/group_Descriptor"
+                android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/ORB_descriptor"
+                    android:title="ORB"/>
+                <item
+                    android:id="@+id/BRIEF_descriptor"
+                    android:title="BRIEF"/>
+                <item
+                    android:id="@+id/BRISK_descriptor"
+                    android:title="BRISK"/>
+                <item
+                    android:id="@+id/FREAK_descriptor"
+                    android:title="FREAK"/>
+
+                </group>
+        </menu>
+    </item>
+    
+    <!-- DescriptorMatcher MenuItem  -->
+    <item android:id="@+id/matcher" android:title="Matcher">
+        <menu>
+            <group android:id="@+id/group_Matcher" android:checkableBehavior="single" android:menuCategory="container">
+             	<item android:id="@+id/BruteForce" android:title="BruteForce"/>
+            	<item android:id="@+id/BruteForce_L1" android:title="BruteForce-L1"/>
+            	<item android:id="@+id/BruteForce_Hamming" android:title="BruteForce-Hamming"/>
+            	<item android:id="@+id/FlannBased" android:title="FlannBased"/>               
+            </group>
+        </menu>
+    </item>
+
+</menu>
