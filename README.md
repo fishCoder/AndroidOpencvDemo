@@ -1,4 +1,4 @@
-#Android上使用OpenCV提取特征
+#Android上使用OpenCV提取特征识别特定区域
 ####分别使用JNI和java调用OpenCV
 ##Functions
 1. 在Functions中选择java调用还是jni调用
